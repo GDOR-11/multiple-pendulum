@@ -209,7 +209,7 @@ img:hover {
 				requestAnimationFrame(render);
 			}
 			function reset_pendulums() {
-				ctx2.clearRect(0, 0, width, height);
+				ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
 
 				var length = Math.min(width / 2, height - 100);
 				for(var i = 0;i < num_points;i++) {
