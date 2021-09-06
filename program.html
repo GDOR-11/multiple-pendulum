@@ -51,18 +51,24 @@ img:hover {
 		<canvas id = 'background-canvas' style = 'background-color: #000;'></canvas>
 		<canvas class = 'top-left fullscreen' id = 'canvas'></canvas>
 		<div class = 'top-left fullscreen' id = 'form' style = 'text-align: center;overflow: auto;'>
-			<p class = 'title'>number of pendulums</p>
-			<p class = 'description'>the number of pendulums atached one to another</p><br>
-			<input id = 'number of pendulums' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
-			<p class = 'title'>physics iterations</p>
-			<p class = 'description'>the number of times verlet integration is done per frame,</p>
-			<p class = 'description'>dt is calculated automatically based on this number</p><br>
-			<input id = 'physics iterations' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
-			<p class = 'title'>joint iterations</p>
-			<p class = 'description'>the number of times joints get updated to maintain their length,</p>
-			<p class = 'description'>the greather physics iterations is the smaller this number needs to be</p><br>
-			<input id = 'joint iterations' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
-			<br><br>
+		<div class = 'top-left fullscreen' id = 'form' style = 'text-align: center;overflow: auto;'>
+			<div>
+				<p class = 'title'>number of pendulums</p>
+				<p class = 'description'>the number of pendulums atached one to another</p><br>
+				<input id = 'number of pendulums' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
+			</div>
+			<div>
+				<p class = 'title'>physics iterations</p>
+				<p class = 'description'>the number of times verlet integration is done per frame,</p>
+				<p class = 'description'>dt is calculated automatically based on this number</p><br>
+				<input id = 'physics iterations' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
+			</div>
+			<div>
+				<p class = 'title'>joint iterations</p>
+				<p class = 'description'>the number of times joints get updated to maintain their length,</p>
+				<p class = 'description'>the greather physics iterations is the smaller this number needs to be</p><br>
+				<input id = 'joint iterations' type = 'text' oninput = 'this.value = this.value.replace(/\D/, "");'>
+			</div>
 			<button class = 'big big-margin-top' onclick = 'start_simulation();'>start simulation</button>
 		</div>
 		<!-- <img class = 'top-left margin' id = 'restart' style = 'display: none;' src = 'https://icons555.com/images/icons-gray/image_icon_recurring_appointment_pic_512x512.png' width = 50 height = 50 onclick = 'reset_pendulums();'> -->
